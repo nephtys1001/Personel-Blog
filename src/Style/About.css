@@ -61,6 +61,11 @@
    
 }
 
+
+
+
+  
+
 @media screen and (max-width: 768px) {
     .photo  {
         justify-content: center;
@@ -72,3 +77,14 @@
         overflow-x: hidden;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .photo  {
+      padding-top: 100px;
+        margin-left: 100px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+

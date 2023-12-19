@@ -27,9 +27,9 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="navbar" style={{ backgroundColor: navbarBackground }}>
+      <nav className="navbar" style={{ backgroundColor: navbarBackground }} >
         <div className="nav-logo">
-          <img src={logom} width={200} alt="logo" />
+          <img src={logom} width={200} alt="logo"  />
         </div>
 
         <div className="nav-links">
@@ -48,6 +48,8 @@ function Navbar() {
             </li>
           </ul>
         </div>
+
+        
       </nav>
     </div>
   );

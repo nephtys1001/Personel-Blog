@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; 
+}
+
+
+
+.line-after-photo {
+    margin-top: 150px; 
+    border: 0;
+    border-top: 1px solid #ccc; 
+  }
+
+

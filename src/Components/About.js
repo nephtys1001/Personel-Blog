@@ -20,6 +20,13 @@ function About() {
       <div className="photo">
         <img src={me} width={400} alt="fotom" />
       </div>
+
+   
+     
+
+      
+
+      
     </div>
   );
 }

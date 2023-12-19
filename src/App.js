@@ -1,6 +1,8 @@
 import About from "./Components/About";
+import Line from "./Components/Line";
 import Navbar from "./Components/Navbar";
-import Projects from "./Components/Projects";
+import Who from "./Components/Who";
+
 
 
 function App() {
@@ -8,7 +10,11 @@ function App() {
     <div >
      <Navbar/>
      <About/>
-     <Projects/>
+
+    <Line/>
+
+     <Who/>
+    
     </div>
   );
 }
