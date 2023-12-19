@@ -7,13 +7,30 @@
 }
 
 .about {
-    padding-top: 10vh; 
+    padding-top: 20vh; 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; 
     margin-top: 10vh;
     
 }
+
+
+
+
+.about .intro #surname{
+    color: #E94451;
+}
+  
+  .name-enter {
+    opacity: 0;
+  }
+  
+  .name-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
 
 .intro {
     display: flex;
@@ -26,7 +43,7 @@
 
 .intro h4 {
     margin-bottom: 5vh; 
-    color: #E94451;
+    color: white;
     font-size: 2vw; 
     letter-spacing: 1px;
     font-family: Arial, Helvetica, sans-serif;
@@ -53,6 +70,39 @@
     font-size: 13px;
     
 }
+.contacts{
+    padding-top: 20px;
+}
+
+.contacts ul{
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.contacts ul li a {
+    padding-right: 20px;
+    color: white;
+    
+  }
+  
+  .contacts ul li  {
+    padding-right: 20px;
+    color: white;
+    animation: upDown 1s infinite alternate; /* upDown adında bir animasyon, sürekli ve alternatif olarak çalışacak */
+  }
+  
+  @keyframes upDown {
+    0% {
+      transform: translateY(0); /* Başlangıç konumu */
+    }
+    100% {
+      transform: translateY(10px); /* Son konum */
+    }
+  }
+  
 
 .photo img {
     background-color: #1F2235;

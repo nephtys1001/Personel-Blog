@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logom from "../images/whitelogom.png";
 import "../Style/Navbar.css";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [navbarBackground, setNavbarBackground] = useState("transparent");
@@ -8,7 +9,6 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-
       const changeColorPosition = 80;
 
       if (scrollPosition > changeColorPosition) {
@@ -27,29 +27,63 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="navbar" style={{ backgroundColor: navbarBackground }} >
+      <nav className="navbar" style={{ backgroundColor: navbarBackground }}>
         <div className="nav-logo">
-          <img src={logom} width={200} alt="logo"  />
+          <img src={logom} width={200} alt="logo" />
         </div>
 
         <div className="nav-links">
           <ul>
             <li>
-              <a href="#">Home </a>
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000} // Örneğin, animasyon süresini 1000ms olarak ayarlayabilirsiniz
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#about">About </a>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <a href="#projects">Projects </a>
+              <Link
+                activeClass="active"
+                to="myjob"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+              >
+                Who Am I?
+              </Link>
             </li>
             <li>
-              <a href="#contact">Contact </a>
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+              >
+                Projects
+              </Link>
             </li>
           </ul>
         </div>
-
-        
       </nav>
     </div>
   );
