@@ -6,22 +6,29 @@
 }
 body{
     background-color: #1F2235;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 15vh;
+    width: 100%;
+    
     
 }
 
 .navbar .nav-logo{
-    padding-left: 100px;
+    padding-left: 10vw;
 }
 
 .navbar .nav-links{
-    padding-right: 100px;
+    padding-right: 10vw;
 }
 
 .navbar .nav-links ul{
