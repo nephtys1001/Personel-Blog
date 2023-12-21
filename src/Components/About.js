@@ -31,6 +31,9 @@ function About() {
     return () => clearInterval(interval);
   }, [currentIndex, fullName.length]);
 
+
+  
+
   return (
     <div className="about" id="about">
       <div className="intro">
@@ -54,9 +57,8 @@ function About() {
       </ul>
     </div>
         <p>
-          Building projects with React.js has been truly rewarding, and after a
-          year of practice, I've improved my abilities in creating dynamic web
-          applications.
+       I am 21 years old and currently a 3rd year student at Kütahya Dumlupınar University Computer Engineering.
+       I am a junior web developer and I prefer to use react.js.
         </p>
       </div>
 

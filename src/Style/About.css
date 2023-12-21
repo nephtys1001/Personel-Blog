@@ -77,7 +77,6 @@
 .contacts ul{
 
     display: flex;
-    justify-content: start;
     align-items: center;
     
 }
@@ -108,8 +107,10 @@
     background-color: #1F2235;
     margin-right: 10vw;
     max-width: 100%;
+    transition: right 5s ease-in-out;
    
 }
+
 
 
 

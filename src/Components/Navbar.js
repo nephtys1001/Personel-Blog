@@ -27,7 +27,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="navbar" style={{ backgroundColor: navbarBackground }}>
+      <nav className="navbar"   style={{ backgroundColor: navbarBackground }}>
         <div className="nav-logo">
           <img src={logom} width={200} alt="logo" />
         </div>
@@ -61,13 +61,13 @@ function Navbar() {
             <li>
               <Link
                 activeClass="active"
-                to="myjob"
+                to="talentss"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={1000}
               >
-                Who Am I?
+                Talents
               </Link>
             </li>
             <li>

@@ -7,11 +7,11 @@ import Who from "./Components/Who";
 
 function App() {
   return (
-    <div >
+    <div id="home">
      <Navbar/>
      <About/>
 
-    <Line/>
+    <Line />
 
      <Who/>
     
