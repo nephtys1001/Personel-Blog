@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 1400px;
+  height: 140vh;
  
 }
 
@@ -90,7 +90,7 @@
 
   @media screen and (max-width: 600px) {
     .who {
-      height: auto; /* Yükseklik otomatik olarak ayarlanacak */
+      height: 260vh; /* Yükseklik otomatik olarak ayarlanacak */
       padding-top: 50px; /* Boşluk azaltma */
     }
   

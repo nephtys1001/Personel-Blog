@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    max-width: 100%;
+}
+
+.projects h1 {
+    color: white;
+    font-size: 4vw;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.projects hr {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.projects .project {
+    width: 90%; /* Projelerin genişliğini yüzde olarak ayarladık */
+    max-width: 400px;
+    padding: 15px; /* Projeler arası boşluğu artırdık */
+    margin-bottom: 20px;
+}
+
+.projects .project h2 {
+    color: crimson;
+    font-size: 3vw;
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .projects {
+        padding-top: 100px; /* Yukarı uçmayı önlemek için padding'i kaldıralım */
+        height: auto; /* Belirli bir yükseklik yerine otomatik yükseklik kullanalım */
+    }
+    .projects .project h2 {
+        padding-top: 15px; /* Yukarı uçan başlık için daha küçük bir padding belirleyelim */
+    }
+}
