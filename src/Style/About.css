@@ -4,7 +4,10 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box; 
+    
 }
+
+
 
 .about {
     padding-top: 20vh; 
@@ -104,12 +107,12 @@
   }
   
 
-.photo img {
-    background-color: #1F2235;
-    margin-right: 10vw;
-    max-width: 100%;
-    transition: right 5s ease-in-out;
-   
+  .photo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+    width: 400px;
 }
 
 
@@ -125,18 +128,19 @@
         padding-top: 30px;
         padding-left: 10px;
     }
-    body {
-        overflow-x: hidden;
-    }
+    .intro p{
+     width: 200px;
+     height: 200px;
+      
+  }
+   
 }
 
 @media screen and (max-width: 1000px) {
-    .photo  {
-      padding-top: 100px;
-        margin-left: 100px;
-    }
-    body {
-        overflow-x: hidden;
-    }
+  .photo img {
+    width: 160px;
+    padding-bottom: 100px;
+}
+
 }
 

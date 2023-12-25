@@ -2,9 +2,14 @@ import React, { useEffect, useState } from "react";
 import logom from "../images/whitelogom.png";
 import "../Style/Navbar.css";
 import { Link } from "react-scroll";
+import Links from "./Links";
+import { CgDetailsMore } from "react-icons/cg";
 
 function Navbar() {
   const [navbarBackground, setNavbarBackground] = useState("transparent");
+  const [isOpen,setIsOpen] =useState(true)
+  const [isToogleOpen,setIsToggleOpen] =useState(true)
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,65 +30,63 @@ function Navbar() {
     };
   }, []);
 
+
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 600) {
+        setIsOpen(false);
+      } else {
+        setIsOpen(true);
+      }
+    }
+  
+    handleResize(); // İlk renderda durumu set etmek için
+  
+    window.addEventListener('resize', handleResize);
+  
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
+  console.log(isOpen)
+
+
+  
   return (
     <div>
-      <nav className="navbar"   style={{ backgroundColor: navbarBackground }}>
+      <nav className="navbar" style={{ backgroundColor: navbarBackground }}>
         <div className="nav-logo">
           <img src={logom} width={200} alt="logo" />
         </div>
 
-        <div className="nav-links">
-          <ul>
-            <li>
-              <Link
-                activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={1000} // Örneğin, animasyon süresini 1000ms olarak ayarlayabilirsiniz
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={1000}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="talentss"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={1000}
-              >
-                Talents
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={1000}
-              >
-                Projects
-              </Link>
-            </li>
-          </ul>
-        </div>
+        {isOpen && <div className="nav-links">
+
+          
+
+          <Links/>
+         
+        </div>}
+
+        {!isOpen && <div className="toogle">
+
+        <CgDetailsMore id="toggle-icon" onClick={() => setIsToggleOpen(!isToogleOpen)} />
+
+       
+
+        {!isToogleOpen && <div className="toogle-links">
+
+      
+      <Links/>
+       
+
+        </div> }
+
+        </div> }
+
+      
+
       </nav>
     </div>
   );

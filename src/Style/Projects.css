@@ -41,12 +41,8 @@
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
     .projects {
-        padding-top: 100px; /* Yukarı uçmayı önlemek için padding'i kaldıralım */
-        height: auto; /* Belirli bir yükseklik yerine otomatik yükseklik kullanalım */
-    }
-    .projects .project h2 {
-        padding-top: 15px; /* Yukarı uçan başlık için daha küçük bir padding belirleyelim */
+    display: none;
     }
 }

@@ -12,6 +12,11 @@ body{
     
 }
 
+
+
+
+
+
 .navbar{
     position: fixed;
     top: 0;
@@ -21,6 +26,8 @@ body{
     align-items: center;
     height: 15vh;
     width: 100%;
+    
+   
     
     
 }
@@ -47,7 +54,8 @@ body{
 
 .navbar .nav-links ul li a:hover{
    color: #dfdfdf;
-   text-decoration: underline;
+   
+   
 }
 
 .navbar .nav-links ul li a{
@@ -58,5 +66,40 @@ body{
 }
 
 
+.toogle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 20vw;
+  }
+  
+  .toogle ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 250px;
+    background-color: black;
+  }
+  
+  .toogle ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    opacity: 0.7; 
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+  }
+  
+  .toogle #toggle-icon {
+    position: fixed;
+    color: wheat;
+    width: 60px;
+    height: 60px;
+  }
 
 
