@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logom from "../images/whitelogom.png";
 import "../Style/Navbar.css";
-import { Link } from "react-scroll";
+
 import Links from "./Links";
 import { CgDetailsMore } from "react-icons/cg";
 

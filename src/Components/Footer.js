@@ -4,7 +4,7 @@ import "../Style/Footer.css"
 function Footer() {
   return (
     <div className='footer'> 
-      <h4 >Created by Alkan Software </h4>
+      <h4 >Created by Alkan Software  </h4>
     </div>
   )
 }
