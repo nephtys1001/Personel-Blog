@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personel-Blog/static/css/main.7331aed9.css",
-    "main.js": "/Personel-Blog/static/js/main.40e5bed5.js",
+    "main.css": "/Personel-Blog/static/css/main.1565f2d3.css",
+    "main.js": "/Personel-Blog/static/js/main.2e92dc63.js",
     "static/media/me.png": "/Personel-Blog/static/media/me.fcb5f17a59060a62b717.png",
     "static/media/csspic.png": "/Personel-Blog/static/media/csspic.6ac464f30c26c9e8a27c.png",
     "static/media/kotlinpic.png": "/Personel-Blog/static/media/kotlinpic.19383826331a9dafc942.png",
@@ -11,11 +11,11 @@
     "static/media/british.png": "/Personel-Blog/static/media/british.5ab0311a40e666cb774f.png",
     "static/media/jspic.png": "/Personel-Blog/static/media/jspic.dcf103fbba784e1f07a1.png",
     "index.html": "/Personel-Blog/index.html",
-    "main.7331aed9.css.map": "/Personel-Blog/static/css/main.7331aed9.css.map",
-    "main.40e5bed5.js.map": "/Personel-Blog/static/js/main.40e5bed5.js.map"
+    "main.1565f2d3.css.map": "/Personel-Blog/static/css/main.1565f2d3.css.map",
+    "main.2e92dc63.js.map": "/Personel-Blog/static/js/main.2e92dc63.js.map"
   },
   "entrypoints": [
-    "static/css/main.7331aed9.css",
-    "static/js/main.40e5bed5.js"
+    "static/css/main.1565f2d3.css",
+    "static/js/main.2e92dc63.js"
   ]
 }
