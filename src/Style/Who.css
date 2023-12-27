@@ -80,11 +80,65 @@
   .who .talents ul li img{
    width: 100%;
    height: 100%;
+   border-radius: 10px;
    }
   .who .talents ul li:hover {
     transform: scale(1.05); /* Büyüklük artışı */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Gölgelendirme efekti */
     border-color: #ff00ff; /* Hover sırasında sınır rengi değişimi */
+  }
+@media screen and (max-width: 600px) {
+    .who {
+      height: auto; /* Yükseklik otomatik olarak ayarlanacak */
+      padding-top: 50px; /* Boşluk azaltma */
+    }
+  
+    .who .title {
+      padding-top: 50px; /* Boşluk azaltma */
+    }
+  
+    .who .talents-select {
+      padding-top: 30px; /* Boşluk azaltma */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .who .talents-select .buttons {
+      
+      width: 80%; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+    }
+  
+    .who .talents-select .buttons button {
+      width: 100px; 
+      margin: 10px; 
+     
+    }
+  
+    .who .talents {
+      height: auto;
+      padding-top: 50px; 
+      width: 90%;
+    }
+  
+    .who .talents ul {
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 20px; 
+    }
+  
+    .who .talents ul li {
+      width: 100%; 
+      
+    }
+
+    .who .talents ul li img {
+      width: 60%;
+      height: 70%;
+      border-radius: 10px;
+      object-fit: cover; 
+    }
   }
 
 
@@ -107,31 +161,38 @@
   
     .who .talents-select .buttons {
       
-      width: 80%; /* Buton grubunun genişliğini ayarla */
-      flex-wrap: wrap; /* Birden fazla satıra geçiş */
-      justify-content: center; /* Butonları ortala */
+      width: 80%; 
+      flex-wrap: wrap; 
+      justify-content: center; 
     }
   
     .who .talents-select .buttons button {
-      width: 100px; /* Buton genişliği */
-      margin: 10px; /* Butonlar arası boşluk */
+      width: 100px; 
+      margin: 10px; 
      
     }
   
     .who .talents {
       height: auto;
-      padding-top: 50px; /* Boşluk azaltma */
-      width: 90%; /* Liste genişliğini ayarla */
+      padding-top: 50px; 
+      width: 90%;
     }
   
     .who .talents ul {
-      grid-template-columns: repeat(1, 1fr); /* Tek sıralı liste */
-      gap: 20px; /* Boşluk azaltma */
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 20px; 
     }
   
     .who .talents ul li {
-      width: 100%; /* Liste öğelerinin genişliğini ayarla */
+      width: 100%; 
       
+    }
+
+    .who .talents ul li img {
+      width: 60%;
+      height: 70%;
+      border-radius: 10px;
+      object-fit: cover; 
     }
   }
 
@@ -145,7 +206,7 @@
     .who .title {
       padding-top: 30px;
       text-align: center;
-      font-size: 24px; /* Başlık metni boyutunu düşür */
+      font-size: 24px; 
     }
   
     .who .talents-select {
@@ -162,7 +223,7 @@
       width: 80px;
       height: 40px;
       margin: 10px;
-      font-size: 12px; /* Buton metni boyutunu düşür */
+      font-size: 12px;
     }
   
     .who .talents {
@@ -171,19 +232,20 @@
     }
   
     .who .talents ul {
-      grid-template-columns: repeat(1, 1fr); /* Tek sütun */
+      grid-template-columns: repeat(1, 1fr);
       gap: 10px;
     }
   
     .who .talents ul li {
-      width: 100%; /* Öğe genişliği */
-      height: 150px; /* Öğe yüksekliği */
+      width: 100%; 
+      height: 150px;
     }
   
     .who .talents ul li img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Resimleri kese ve yerleştir */
+      width: 60%;
+      height: 70%;
+      border-radius: 10px;
+      object-fit: cover; 
     }
   }
   
